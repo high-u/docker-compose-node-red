@@ -1,0 +1,15 @@
+version: '3'
+services:
+  nodered:
+    build: .
+    ports:
+     - "1880:1880"
+     - "1881:1881"
+    volumes:
+     - nodered-data:/data
+    networks:
+      - nodered-net
+volumes:
+  nodered-data:
+networks:
+  nodered-net:
