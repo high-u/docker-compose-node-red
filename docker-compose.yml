@@ -4,7 +4,7 @@ services:
     build: .
     ports:
      - "1880:1880"
-     - "1881:1881"
+     - "1881:1881/udp"
     volumes:
      - nodered-data:/data
     networks:
